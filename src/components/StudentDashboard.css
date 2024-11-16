@@ -1,0 +1,74 @@
+/* Overall container for the dashboard */
+.dashboard-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f9; /* Light background */
+  min-height: 100vh;
+}
+
+/* Dashboard title */
+.dashboard-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2C3E50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Container for all the widgets */
+.widget-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; /* Limit width for large screens */
+  margin: 0 auto;
+}
+
+/* Individual widget styling */
+.widget {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Widget hover effect */
+.widget:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Widget heading */
+.widget h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #34495E;
+  margin-bottom: 10px;
+}
+
+/* Widget description text */
+.widget p {
+  font-size: 16px;
+  color: #7F8C8D;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 24px;
+  }
+
+  .widget-container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+
+  .widget {
+    padding: 15px;
+  }
+}

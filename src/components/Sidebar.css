@@ -1,0 +1,78 @@
+/* General sidebar container */
+.sidebar {
+  width: 250px;
+  background-color: #2C3E50; /* Dark background for the sidebar */
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar header with the logo */
+.sidebar h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px 0;
+}
+
+/* Menu items container */
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual menu item styling */
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #BDC3C7; /* Lighter text color */
+  text-decoration: none;
+  border-bottom: 1px solid #34495E; /* Subtle border for separation */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Icon style */
+.icon {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+/* Hover effect on menu items */
+.menu-item:hover {
+  background-color: #16A085; /* Hover color */
+  color: #fff;
+  border-left: 4px solid #fff; /* Highlight the item */
+}
+
+/* Active link styling */
+.menu-item.active {
+  background-color: #1ABC9C; /* Active link background */
+  color: white;
+  border-left: 4px solid #fff; /* Highlight active item with a line */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar h2 {
+    font-size: 20px;
+  }
+
+  .menu-item {
+    font-size: 16px;
+  }
+}

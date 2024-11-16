@@ -1,0 +1,141 @@
+/* Footer Styling */
+footer {
+    background-color: #1e3a8a; /* Deep blue background */
+    color: #ffffff; /* White text */
+    padding: 40px 30px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  /* Footer Top Section */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    flex: 1;
+  }
+  
+  .footer-links h4 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff7c7c; /* Coral color for headings */
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 10px 0;
+  }
+  
+  .link-button {
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .link-button:hover {
+    color: #ff7c7c; /* Coral color on hover */
+  }
+  
+  /* Footer Contact Section */
+  .footer-contact {
+    flex: 1;
+  }
+  
+  .footer-contact h4 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff7c7c; /* Coral color for headings */
+  }
+  
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-contact li {
+    margin: 10px 0;
+  }
+  
+  .footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .footer-contact a:hover {
+    color: #ff7c7c; /* Coral color on hover */
+    text-decoration: underline;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #ff7c7c; /* Coral border separating bottom section */
+    padding-top: 20px;
+  }
+  
+  /* Social Media Icons */
+  .social-media {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    color: #ffffff;
+    background-color: #ff7c7c; /* Coral background for buttons */
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  .social-icon:hover {
+    background-color: #ff5c5c; /* Slightly darker coral on hover */
+  }
+  
+  /* Copyright Text */
+  footer p {
+    font-size: 1em;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  /* Responsive Design for Small Screens */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .social-media {
+      justify-content: center;
+    }
+  }
